@@ -1,0 +1,6 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded square background -->
+  <rect width="32" height="32" rx="6" fill="#1a0505" opacity="0.8"/>
+  <!-- Red dot -->
+  <circle cx="16" cy="16" r="5" fill="#dc2626"/>
+</svg>

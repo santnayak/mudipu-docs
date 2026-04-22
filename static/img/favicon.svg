@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded square for favicon -->
+  <rect width="16" height="16" rx="3" fill="#1a0505"/>
+  <!-- Red dot -->
+  <circle cx="8" cy="8" r="3" fill="#dc2626"/>
+</svg>

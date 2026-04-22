@@ -1,0 +1,170 @@
+/**
+ * Mudipu Documentation Theme
+ * Matches mudipu-web and mudipu-site design system
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap');
+
+/* Global font */
+:root {
+  --ifm-font-family-base: 'JetBrains Mono', monospace;
+  --ifm-font-family-monospace: 'JetBrains Mono', monospace;
+  
+  /* Mudipu Red Theme - Light Mode */
+  --ifm-color-primary: #dc2626;
+  --ifm-color-primary-dark: #c62020;
+  --ifm-color-primary-darker: #bb1e1e;
+  --ifm-color-primary-darkest: #9a1919;
+  --ifm-color-primary-light: #e03838;
+  --ifm-color-primary-lighter: #e44646;
+  --ifm-color-primary-lightest: #ed6363;
+  
+  --ifm-code-font-size: 90%;
+  --docusaurus-highlighted-code-line-bg: rgba(220, 38, 38, 0.1);
+  
+  /* Background */
+  --ifm-background-color: #ffffff;
+  --ifm-navbar-background-color: #ffffff;
+}
+
+/* Dark Mode - Matches mudipu-web */
+[data-theme='dark'] {
+  /* Red primary for dark mode */
+  --ifm-color-primary: #dc2626;
+  --ifm-color-primary-dark: #c62020;
+  --ifm-color-primary-darker: #bb1e1e;
+  --ifm-color-primary-darkest: #9a1919;
+  --ifm-color-primary-light: #e03838;
+  --ifm-color-primary-lighter: #e44646;
+  --ifm-color-primary-lightest: #ed6363;
+  
+  /* Dark backgrounds matching mudipu-web */
+  --ifm-background-color: #09090b;
+  --ifm-background-surface-color: #18181b;
+  --ifm-navbar-background-color: #09090b;
+  --ifm-footer-background-color: #09090b;
+  
+  /* Text colors */
+  --ifm-font-color-base: #fafafa;
+  --ifm-font-color-secondary: #a1a1aa;
+  
+  /* Code blocks */
+  --docusaurus-highlighted-code-line-bg: rgba(220, 38, 38, 0.2);
+  
+  /* Borders */
+  --ifm-color-emphasis-300: #27272a;
+  --ifm-hr-border-color: #27272a;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ifm-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-emphasis-300);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-emphasis-400);
+}
+
+/* Navbar styling */
+.navbar__title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.navbar__logo {
+  height: 2rem;
+}
+
+/* Code blocks with JetBrains Mono */
+.prism-code {
+  font-size: 0.85rem;
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1.6;
+}
+
+code {
+  font-family: 'JetBrains Mono', monospace;
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.3rem;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+/* Tables */
+table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead tr {
+  background-color: var(--ifm-color-primary);
+  color: white;
+}
+
+[data-theme='dark'] table thead tr {
+  background-color: rgba(220, 38, 38, 0.2);
+  color: var(--ifm-font-color-base);
+}
+
+/* Admonitions with red accent */
+.admonition {
+  margin-bottom: 1em;
+  border-left: 4px solid var(--ifm-color-primary);
+}
+
+.admonition-heading {
+  font-weight: 600;
+}
+
+/* Links with red hover */
+a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar styling */
+.menu__link--active {
+  background-color: rgba(220, 38, 38, 0.1);
+  border-left: 3px solid var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--ifm-footer-background-color);
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+/* Hero section (if used) */
+.hero {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, var(--ifm-background-color) 100%);
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+/* Search bar */
+.DocSearch-Button {
+  border-radius: 0.5rem;
+}
+
+/* Cards/Panels */
+.card {
+  background-color: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
